@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobConnect</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    section {
+      padding: 100px 0;
+      font-size: 1.25rem;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 30px 0;
+      font-size: 1.1rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    h4,
+    h5 {
+      font-size: 1.75rem;
+    }
+
+    p,
+    li {
+      font-size: 1.2rem;
+    }
+    #home img {
+      display: block;
+      margin: 0 auto;
+      max-height: 150px;
+    }
+
+
+    /* Typing Effect for Home Header */
+    .typing-header {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid white;
+      width: 0;
+      animation: typing 3s steps(20, end) forwards, blink 0.8s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 20ch;
+      }
+    }
+
+    @keyframes blink {
+      0%,
+      100% {
+        border-color: transparent;
+      }
+
+      50% {
+        border-color: white;
+      }
+    }
+    .contact-section {
+      width: 100%;
+      max-width: 40rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 3rem 1rem;
+    }
+    
+    .contact-intro > * + * {
+      margin-top: 1rem;
+    }
+    
+    .contact-title {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+      font-weight: 700;
+    }
+    
+    .contact-description {
+      color: rgb(107 114 128);
+    }
+    
+    .form-group-container {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .form-label {
+      margin-bottom: 0.5rem;
+    }
+    
+    .form-input,
+    .form-textarea {
+      padding: 0.5rem;
+      border: 1px solid #e5e7eb;
+      display: flex;
+      height: 2.5rem;
+      width: 100%;
+      border-radius: 0.375rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+    
+    .form-input::placeholder,
+    .form-textarea:focus-visible {
+      color: #6b7280;
+    }
+    
+    .form-input:focus-visible,
+    .form-textarea:focus-visible {
+      outline: 2px solid #2563eb;
+      outline-offset: 2px;
+    }
+    
+    .form-textarea {
+      min-height: 120px;
+    }
+    
+    .form-submit {
+      width: 100%;
+      margin-top: 1.2rem;
+      background-color: #3124ca;
+      color: #fff;
+      padding: 13px 5px;
+      border-radius: 0.375rem;
+    }
+    
+  </style>
+</head>
+
+<body>
+    <!-- Sticky & Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="ChatGPT Image May 7, 2025, 12_29_18 AM-Photoroom.png" alt="JobConnect Logo" width="40" height="40" class="me-2">
+                JobConnect
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#workers">Workers</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#faqs">FAQs</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Home Section with Typing Effect -->
+    <section id="home" class="text-center d-flex align-items-center justify-content-center text-white"
+        style="min-height: 100vh; background-color: #007bff;">
+        <div class="container">
+            <img src="ChatGPT Image May 7, 2025, 12_29_18 AM-Photoroom.png" alt="JobConnect Logo" class="mb-4" style="max-width: 150px;">
+        <h1><span class="typing-header">Welcome to JobConnect</span></h1>
+        <p class="lead mt-3">We are a dedicated team offering top-notch professional services tailored to your business
+            needs.</p>
+        <a href="#contact" class="btn btn-light btn-lg mt-3">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2 class="text-center mb-4">Why Choose JobConnect?</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                <h4>Skilled Team</h4>
+                <p>Our members are handpicked professionals with years of experience in their fields.</p>
+                </div>
+                <div class="col-md-4">
+                <h4>Reliable Delivery</h4>
+                <p>We deliver services on time and with consistent quality, tailored to your project goals.</p>
+                </div>
+                <div class="col-md-4">
+                <h4>Personalized Support</h4>
+                <p>From consultation to completion, we work closely with you to ensure your satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light">
+        <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-6">
+                <h5>What We Offer</h5>
+                <ul>
+                    <li>Custom software development</li>
+                    <li>IT and technical support</li>
+                    <li>Web design and maintenance</li>
+                    <li>Customer service solutions</li>
+                </ul>
+                </div>
+                <div class="col-md-6">
+                <h5>Interested in Joining?</h5>
+                <ul>
+                    <li>We’re always looking for skilled professionals to join our team.</li>
+                    <li>If you're interested, reach out via our <strong>Contact Us</strong> page.</li>
+                    <li>We'll review your application and contact you if there's a fit.</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Available Workers Section -->
+    <section id="workers">
+        <div class="container">
+        <h2 class="text-center mb-4">Available Workers</h2>
+        <div class="row g-4">
+            <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/150" class="rounded-circle mb-2" alt="Worker 1">
+            <h5>Vandal</h5>
+            <p>Web Developer</p>
+            </div>
+            <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/150" class="rounded-circle mb-2" alt="Worker 2">
+            <h5>Phantom</h5>
+            <p>Graphic Designer</p>
+            </div>
+            <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/150" class="rounded-circle mb-2" alt="Worker 3">
+            <h5>Odin</h5>
+            <p>Content Writer</p>
+            </div>
+            <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/150" class="rounded-circle mb-2" alt="Worker 4">
+            <h5>Ghost</h5>
+            <p>Mobile Developer</p>
+            </div>
+            <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/150" class="rounded-circle mb-2" alt="Worker 5">
+            <h5>Ares</h5>
+            <p>SEO Specialist</p>
+            </div>
+            <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/150" class="rounded-circle mb-2" alt="Worker 6">
+            <h5>Specter</h5>
+            <p>Data Analyst</p>
+            </div>
+            <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/150" class="rounded-circle mb-2" alt="Worker 7">
+            <h5>Operator</h5>
+            <p>Project Manager</p>
+            </div>
+            <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/150" class="rounded-circle mb-2" alt="Worker 8">
+            <h5>Guardian</h5>
+            <p>IT Support</p>
+            </div>
+            <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/150" class="rounded-circle mb-2" alt="Worker 9">
+            <h5>Sheriff</h5>
+            <p>UX Designer</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="bg-light">
+        <div class="container">
+        <h2 class="text-center mb-4">FAQs</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                What services do you offer?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                We provide a variety of services, including web development, graphic design, technical support, content writing, and more. Our team of professionals ensures top-notch service for every client.
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                How can I apply to work with you?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                You can apply to work with us by filling out the contact form on our "Contact Us" page. Please provide your qualifications and the services you're interested in.
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                How do I get a quote for services?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                To get a quote, simply reach out to us via the contact form or email. Provide us with the details of your project, and we will send you a personalized quote.
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                Can I hire multiple members for a single project?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                Yes, you can hire multiple members to work together on a project. We'll coordinate the team based on your needs and requirements.
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                How do I start a project with you?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                To start a project, please fill out the contact form with your project details. Our team will reach out to discuss the project scope, timeline, and pricing.
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <p class="text-center">JobConnect bridges the gap between talented freelancers and companies looking to grow. Built with a mission to make work flexible, secure, and rewarding for everyone involved.</p>
+        </div>
+    </section>
+  
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-intro">
+        <h2 class="contact-title">Get in Touch</h2>
+        <p class="contact-description">
+          Fill out the form below and we'll get back to you as soon as possible.
+        </p>
+      </div>
+    
+      <form  action="https://api.web3forms.com/submit" method="POST">
+    
+        <input type="hidden" name="access_key" value="5e447b88-8cf5-4359-92c4-1495aaf0915e" />
+        <input type="hidden" name="redirect" value="thank-you.html">
+        <div class="form-group-container">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+          </div>
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone</label>
+            <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+          </div>
+        </div>
+        <button class="form-submit" type="submit">Send Message</button>
+      </form>
+    
+    </section>
+  
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+        <p>&copy; 2025 JobConnect. All rights reserved.</p>
+        <p>-for educational purpose only.</p>
+        </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function redirectThankYou() {
+      setTimeout(() => {
+        window.location.href = "thank-you.html";
+      }, 100); // slight delay to allow mailto to trigger
+      return true;
+    }
+  </script>
+</body>
+</html>
